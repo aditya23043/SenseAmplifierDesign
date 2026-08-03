@@ -30,7 +30,7 @@ Signal (SAen) should be triggered for correct Sense somethin Amplifier operation
 
 ## Sizing
 
-<center><img src="./assets/schem.png" width="60%"></center>
+<p align="center"><img src="./assets/schem.png" width="60%"></p>
 
 - We firstly found the SAen-Q delay and BL differential voltage by tweaking the BL discharge rate for
   different sizings
