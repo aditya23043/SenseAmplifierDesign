@@ -30,6 +30,16 @@ Signal (SAen) should be triggered for correct Sense somethin Amplifier operation
 
 ## Sizing
 
-<img src="./assets/schem.png" width="50%">
+<img src="./assets/schem.png" width="60%">
 
-In order to find the sizing for the transistors 
+- We firstly found the SAen-Q delay and BL differential voltage by tweaking the BL discharge rate for
+  different sizings
+- From the values, we picked and fixed the BL discharge rate for which we get the lowest Bitline
+  differential voltage
+
+<img src="./assets/sizing1.png" width="60%">
+
+- Now with the fixed differential voltage, we vary the sizing and pick the one which offers the best
+  tradeoff between delay and transistor sizes
+ 
+<img src="./assets/sizing2.png" width="60%">
