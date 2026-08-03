@@ -30,7 +30,6 @@ Signal (SAen) should be triggered for correct Sense somethin Amplifier operation
 
 ## Sizing
 
-%% ![Schematic](./assets/schem.png)
-<img src="./assets/schem.png" width="50%">
+<img src="./assets/schem.png" width="20%">
 
 In order to find the sizing for the transistors 
