@@ -4,7 +4,9 @@
 
 ## Specifications
 
-| $T_{SAen-Q}               | 200 ps$ |
-| $V_{offset} @ 3σ          | 25 mV$  |
-| $SAen Pulse Width         | 100 ps$ |
-| $V_{DD}                   | 1.08 V$ |
+| Specification     | Value   |
+| ---               | ---     |
+| $T_{SAen-Q}       | 200 ps$ |
+| $V_{offset} @ 3σ  | 25 mV$  |
+| $SAen Pulse Width | 100 ps$ |
+| $V_{DD}           | 1.08 V$ |
