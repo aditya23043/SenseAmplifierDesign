@@ -43,3 +43,19 @@ Signal (SAen) should be triggered for correct Sense somethin Amplifier operation
   tradeoff between delay and transistor sizes
  
 ![sizing2](./assets/sizing2.png)
+
+### Final Sizing
+
+| Transistor Name    | Purpose        | Width (um) | Length (um) |
+|--------------------|----------------|------------|-------------|
+| M5                 | Tail NMOS      | 2.8        | 0.06        |
+| M1, M4             | Latch NMOS     | 2.4        | 0.06        |
+| M0, M7             | Access PMOS    | 1.8        | 0.06        |
+| M2, M3             | Latch PMOS     | 1.6        | 0.06        |
+| M6, M12, M14, M15  | Latch 1 MOS    | 0.2        | 0.06        |
+| M13, M17, M16, M18 | Latch 2 MOS    | 0.2        | 0.06        |
+| M8, M9, M10        | Precharge PMOS | 0.135      | 0.06        |
+
+## Presentation
+
+[![presentation](./assets/ppt.png)](https://docs.google.com/presentation/d/1jzFjn4zTGRYCBdNPYTCXfxP-IHwxheRrN_HR3HV_ISg/edit?usp=sharing)
