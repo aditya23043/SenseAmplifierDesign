@@ -1,0 +1,168 @@
+  Run on edatools-server2.iiitd.edu.in (Linux 2.6.32-754.35.1.el6.x86_64)
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : aditya23043@edatools-server2.iiitd.edu.in
+*** OS    : Red Hat Enterprise Linux Server release 6.10 (Santiago) [VCO = aol]
+*** CPU   :
+    Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz
+    Number of physical processors     : 2
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 36
+    Number of logical processors      : 72
+*** Freq  : 800.000MHz
+*** Cache : 39936 KB
+*** MEM   : 528955884 kB
+*** Date  : Mon Apr  6 14:53:05 2026
+
+/mentor/AMS/aol/bin/eldo_64.exe -i sa.wdb 
+
+
+***** PRE-PROCESSING ...
+
+1******* 6-Apr-26 *******  ELDO 12.2 (64 bits)  (v7.8_1.1)  *******14:53:06******
+
+0.wdb
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  A 5 U WDB 69D0131E01C3.03.7F.00.00.01.00.AE.0A 1 1 0 0
+ERROR  252: In file "./sa.wdb" line 2:
++   OBJECT "A": Pins are missing for this device: 1 found, 3 expected
+    3  P "WDB_VERSION" "2"
+    4  
+    6  €    7  ÿÿşÿÿşxÿÿşúÿÿÿÿÿşÿÿü,ÿÿøYÿÿğ²ÿÿádÿÿÂÈÿÿ)‰ÿş@ÿşÊÃ    8  ÿÿşÿÿşxÿÿşúÿÿÿÿÿşÿÿü,ÿÿøYÿÿğ²ÿÿádÿÿÂÈÿÿ)‰ÿş@ÿşÊÃ    9  ÿÿşÿÿşxÿÿşúÿÿÿÿÿşÿÿü,ÿÿøYÿÿğ²ÿÿádÿÿÂÈÿÿ)‰ÿş@ÿşÊÃERROR 25: In file "./sa.wdb" line 3:
++   Line not consistent with language syntax.
+   10  MI*5Y**:**S*?*,VY***G**YG@**Z****,**N*C*W***_*(JD*EKAP**N*P*
+ERROR 25: In file "./sa.wdb" line 11:
++   Line not consistent with language syntax.
+Warning  65: In file "./sa.wdb" line 10:
++   Probably missing surrounding ' or {} at or near JD*EKAP**N*P*
++   Eldo will consider that as an expression, which is may be not what is expected.
+ERROR 920: In file "./sa.wdb" line 10:
++   Unable to parse expression JD*EKAP**N*P*. 
+   11  oŒv7Ô•áwÖÅ¼ERROR 25: In file "./sa.wdb" line 12:
++   Line not consistent with language syntax.
+   12  –EÕÈı° ©İwwñ¿‘•=UpáÅ„»åf¾ûÊû0®“Äœ8¦ÈtÆïH„›µl™iªÍ1ªTOT   13  _**KS*******S**T**J*******<*********/**`7***
+ERROR 25: In file "./sa.wdb" line 14:
++   Line not consistent with language syntax.
+ERROR  892: In file "./sa.wdb" line 13:
++   OBJECT "_**KS*******S**T**J*******<*********/**`7***":Unknown IBIS device
+   14  Ş‡ü¼TRÏp©Ò¿1#@µŠçEéÂ[ÏFláCQú\¡‚t&³kÎ@Á]Àéü¡‚¾$RÕ0-3ç'!¼ºßIQòd©ºîí›°­æ.ë>I~ßÓû°©ÌBCP+C?Á£&lÄ¬i“È»Ç§øğZù²ERROR 25: In file "./sa.wdb" line 15:
++   Line not consistent with language syntax.
+   15   T4RÃ   16  Å,:GÜ   17  *Òÿú·ÿëüÁÁ˜¢   18  •Ã\”ı'x¬pñÌ$÷Qª×‡»ø¶@ÂË¤ÎOyÁ¾ïª¿ØcL"¬GÍĞÀÛàóªvD&\(P¾‡¼.âw×Ÿi$Àôö÷   19  Ä   20  ¶ERROR 25: In file "./sa.wdb" line 21:
++   Line not consistent with language syntax.
+   21  'ù6dİ]¨ÔîTıª„´ °Dİ“}kû©æT,ğhJnr­ø8™°’J¯­šERROR 25: In file "./sa.wdb" line 22:
++   Line not consistent with language syntax.
+   22  Z~n)Y]DÉ±•5â€B6i=¡õ¨É   23  «    24  ¦   25  WWERROR 25: In file "./sa.wdb" line 25:
++   Line not consistent with language syntax.
+   26  DFL%A********Z****|G*****EW*@*F_L* KS**_E	***E*********H*	**Y*F***F<R*C***N1_GZ1**>*2*R**=***
+   27  ·$'°ÚIú
+   28  Ú©Ù½mµ9öË"Oªïa´Êı/Àf‰X£,ÔeL¿®Ç+¾Ët½b*Íi<Aß˜üªÚóİSÄ   29  ÚyWarning  65: In file "./sa.wdb" line 26:
++   Probably missing surrounding ' or {} at or near ***
++   Eldo will consider that as an expression, which is may be not what is expected.
+ERROR 920: In file "./sa.wdb" line 26:
++   Unable to parse expression ***. 
++   Expression starts by an operator in ***
+
+   30  A*   31  ²€   32  °   33  Ö¼[Rí)+KqŸÂ+]&ë„´„¯lĞ•Ä#ÊïG›“—qo‹<àc¹E¿4’¶ÔjÉ×Ó
+ERROR 25: In file "./sa.wdb" line 30:
++   Line not consistent with language syntax.
+   34  D**
+ERROR 25: In file "./sa.wdb" line 34:
++   Line not consistent with language syntax.
+   35  M*$*   36  ¹¼ERROR 25: In file "./sa.wdb" line 35:
++   Line not consistent with language syntax.
+   38  iY~’
+   39  Çƒ€mp@"˜ûÕ<   40  üIERROR 25: In file "./sa.wdb" line 41:
++   Line not consistent with language syntax.
+ERROR 25: In file "./sa.wdb" line 38:
++   Line not consistent with language syntax.
+   41  â¯«°ERROR 25: In file "./sa.wdb" line 42:
++   Line not consistent with language syntax.
+   42  =ERROR 25: In file "./sa.wdb" line 43:
++   Line not consistent with language syntax.
+   43  şNŠ]%¸1eôÍ4BwĞªÕ¯Õ×-òØèÚ#mŸdgÛ1j@	=éÖæ'Òs`±ê¦µ6!NO`ø›QíâŸNghšÑ•üşp2‹1…™eeö²=}‚f~ëŞ/OÍ`iwVİ*CÇ’¤©Ä4e…úi“«Sl“ã‘±óIIlİ+"ïó‰J}Ÿ˜/øaP;Èê3J²[?7 4ëÕwJâ'v7†¸š”†kˆª¥ŸW6¡]¹è²   45  …   46  ÿÿ  ÿÿµ-ÿúô’ÿş0?ÿıÈ£ÿıåcÿûæYÿûñnÿüşkÿık‘ÿû>ÿôÉàÿèœşÿ”MÌ<ÿõµÿÍL+   47  W‘ÿşTÿÿŞ¬LDÑ=]<*ñçN¥®OQù/ÖÑW2)IAU}6”Â·ÌÍëS¬BƒÑã¿K£ßS…(·¼~† Q9~Àé:ª”*-E¥ìÈBßªêETN¸Á
+   48  ¤ERROR 25: In file "./sa.wdb" line 49:
++   Line not consistent with language syntax.
+ERROR  254: In file "./sa.wdb" line 47:
++   OBJECT "W": Unknown parameter ]<*ñçN¥®OQù/ÖÑW2
+   49  ERROR 25: In file "./sa.wdb" line 50:
++   Line not consistent with language syntax.
+   50  `   51  ÿá¨F€ÔUÿòŒ
+ERROR 25: In file "./sa.wdb" line 52:
++   Line not consistent with language syntax.
+   52  <üÈ^­Ê„hU„–R&fÊw’©uw¤óá•OŠvë   53  ¾ÕG0NÛ!h›¢Ê®*ìúİÆ6ì$H	4¾¥ è–¤m>&lè>ÇÀ[]úR>‘íš‡öáÓ~«¯¦·Ì»a å¿­‰<±Ÿæ¸Ù"Bšæ.>­À«†A€|íàmÓ¥ö4Ó
+ERROR 25: In file "./sa.wdb" line 54:
++   Line not consistent with language syntax.
+   54  ~:E¯pYqh˜êj¸³y_•!´ºÂ=ó#L–æI¤O˜Y§´X9§3B=ïZyz*cÊ°Ş®#Y¨,@—èˆøÑ“Áf,&È¸¿W›0 ÂDFK‹q_²"`Š‡em   55  È7ÿ?Ë™iôHï$Éè,ÅøpHÔYD¬…§[î”=r†§@ä#(5‚2Øîrä¥/´Æ>jV€	›õBd|=¥
+   56  G*%****L)7E*****Y**J5**<*E!G*G%*Z**H***ERROR 25: In file "./sa.wdb" line 56:
++   Line not consistent with language syntax.
+   57  EN   58  áEª©òj‚£K¶Y±6ç·Öë¼‹	×¹· ã¶NeYB¼f1ÊÕNQ1wë¢ÄNCÊÊàjTZŠ‰óJU±(.5{%©ûùÎA­t™òÆSt¯%éFÄ™µãKn‚÷è©»ù/§.>gERROR 25: In file "./sa.wdb" line 57:
++   Line not consistent with language syntax.
+   59  P**I*   60  Ú€¶)ERROR  844: In file "./sa.wdb" line 59:
++   OBJECT "P**I*": Pin specification is missing
+   61  U**0*H /^N**#**.X**LS****-{*W*[D****&*F**-=2_H**/VD*******J**E***'*G*3**D** *******C*OR**  254  
+  271  
+
+End of file 
+
+Warning  65: In file "./sa.wdb" line 61:
++   Probably missing surrounding ' or {} at or near 2_H**/VD*******J**E***
++   Eldo will consider that as an expression, which is may be not what is expected.
+ERROR 920: In file "./sa.wdb" line 61:
++   Unable to parse expression 2_H**/VD*******J**E***  . 
++   Expression 2_H**/VD*******J**E*** contains 2 succesiveoperators '*' and '/' 
+
+ERROR 828: In file "./sa.wdb" line 61:
++   OBJECT "Y**0*H": Equal sign '=' is missing in parameter list
+Warning  65: In file "./sa.wdb" line 61:
++   Probably missing surrounding ' or {} at or near *G*3**D**
++   Eldo will consider that as an expression, which is may be not what is expected.
+ERROR 920: In file "./sa.wdb" line 61:
++   Unable to parse expression *G*3**D** *******C*OR**. 
++   error near sign '-' in *G*3**D** *******C*OR**
+
+ERROR 828: In file "./sa.wdb" line 61:
++   OBJECT "Y**0*H": Equal sign '=' is missing in parameter list
+ERROR 54: In file "./sa.wdb" line 61:
++   Syntax error parsing "Y**0*H: Found = while expecting a REAL value".
+ERROR 828: In file "./sa.wdb" line 61:
++   OBJECT "Y**0*H": Equal sign '=' is missing in parameter list
+
+***** 33  error(s). 
+***** 4  warning(s). 
+
+
+***** GENERATION ...
+
+
+***** 33  error(s). 
+***** 4  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (MB):    239
+0 elements
+0 nodes 
+0 input signals
+
+Check your input netlist...
+
+***>MESSAGE SUMMARY: 33 errors, 4 warnings
+
+***>GLOBAL CPU TIME 0s 030ms <***
+
+
+***>GLOBAL ELAPSED TIME 1s <***
+
+
+  Job started at  6-Apr-2026 14:53:05
+  Job end at      6-Apr-2026 14:53:06
+
+  Run on edatools-server2.iiitd.edu.in (Linux 2.6.32-754.35.1.el6.x86_64)
+

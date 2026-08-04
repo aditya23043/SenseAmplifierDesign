@@ -1,0 +1,65 @@
+START report: Mon Apr  6 14:53:06 2026 
+** Error: (eldo - 25)  In file "./sa.wdb" line 3:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 11:
++   Line not consistent with language syntax.
+** Error: (eldo - 920)  In file "./sa.wdb" line 10:
++   Unable to parse expression JD*EKAP**N*P*. 
+** Error: (eldo - 25)  In file "./sa.wdb" line 12:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 14:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 15:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 21:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 22:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 25:
++   Line not consistent with language syntax.
+** Error: (eldo - 920)  In file "./sa.wdb" line 26:
++   Unable to parse expression ***. 
++   Expression starts by an operator in ***
+
+** Error: (eldo - 25)  In file "./sa.wdb" line 30:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 34:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 35:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 41:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 38:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 42:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 43:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 49:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 50:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 52:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 54:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 56:
++   Line not consistent with language syntax.
+** Error: (eldo - 25)  In file "./sa.wdb" line 57:
++   Line not consistent with language syntax.
+** Error: (eldo - 920)  In file "./sa.wdb" line 61:
++   Unable to parse expression 2_H**/VD*******J**E***  . 
++   Expression 2_H**/VD*******J**E*** contains 2 succesiveoperators '*' and '/' 
+
+** Error: (eldo - 828)  In file "./sa.wdb" line 61:
++   OBJECT "Y**0*H": Equal sign '=' is missing in parameter list
+** Error: (eldo - 920)  In file "./sa.wdb" line 61:
++   Unable to parse expression *G*3**D** *******C*OR**. 
++   error near sign '-' in *G*3**D** *******C*OR**
+
+** Error: (eldo - 828)  In file "./sa.wdb" line 61:
++   OBJECT "Y**0*H": Equal sign '=' is missing in parameter list
+** Error: (eldo - 54)  In file "./sa.wdb" line 61:
++   Syntax error parsing "Y**0*H: Found = while expecting a REAL value".
+** Error: (eldo - 828)  In file "./sa.wdb" line 61:
++   OBJECT "Y**0*H": Equal sign '=' is missing in parameter list

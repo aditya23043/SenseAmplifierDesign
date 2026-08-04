@@ -1,0 +1,54 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  MDT_Project
+* Top Cell Name: senseamp
+* View Name:     schematic
+* Netlisted on:  Mar 18 22:30:25 2026
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: MDT_Project
+* Cell Name:    senseamp
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT senseamp SAen gnd pch vdd
+*.PININFO SAen:I pch:I vdd:I gnd:B
+MM10 net012 pch vdd vdd psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM9 net017 pch vdd vdd psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM8 net017 pch net012 net012 psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM7 net017 SAen net33 net33 psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM3 net017 net012 vdd vdd psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM2 net012 net017 vdd vdd psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM0 net012 SAen net24 net24 psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM5 net26 SAen gnd gnd nsvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM4 net017 net012 net26 net26 nsvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 
++ m=1 accurateFlow=0
+MM1 net012 net017 net26 net26 nsvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 
++ m=1 accurateFlow=0
+CC1 net33 gnd 200f $[CP]
+CC0 net24 gnd 200f $[CP]
+.ENDS
+

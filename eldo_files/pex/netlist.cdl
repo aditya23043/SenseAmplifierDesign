@@ -1,0 +1,68 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  MDT
+* Top Cell Name: senseamp
+* View Name:     schematic
+* Netlisted on:  Apr  8 23:20:48 2026
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: MDT
+* Cell Name:    senseamp
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT senseamp BL BLB Q QB SAF SAT SAen gnd pch vdd
+*.PININFO BL:I BLB:I SAen:I pch:I vdd:I Q:O QB:O SAF:O SAT:O gnd:B
+MM18 QB SAT vdd vdd psvtlp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM16 QB Q vdd vdd psvtlp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM15 Q QB vdd vdd psvtlp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM10 SAF pch vdd vdd psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM9 SAT pch vdd vdd psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM8 SAT pch SAF vdd psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM14 Q SAF vdd vdd psvtlp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM7 SAT SAen BLB vdd psvtlp w=1.8 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM3 SAT SAF vdd vdd psvtlp w=1.6 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM2 SAF SAT vdd vdd psvtlp w=1.6 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM0 SAF SAen BL vdd psvtlp w=1.8 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM17 QB Q net058 gnd nsvtlp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM13 net058 SAT gnd gnd nsvtlp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM12 Q SAF net059 gnd nsvtlp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM6 net059 QB gnd gnd nsvtlp w=0.2 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM5 net019 SAen gnd gnd nsvtlp w=2.8 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM4 SAT SAF net019 gnd nsvtlp w=2.4 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+MM1 SAF SAT net019 gnd nsvtlp w=2.4 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+.ENDS
+

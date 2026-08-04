@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/senseamp.dv
+dv_start matched
+dv_cell {senseamp} {senseamp} matched
+dv_obj_count -transformed_nets {13 13} -transformed_inst {18 18} -transformed_port {10 10}
+dv_end

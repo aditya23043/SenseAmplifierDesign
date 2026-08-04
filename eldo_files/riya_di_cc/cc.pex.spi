@@ -1,0 +1,99 @@
+* File: cc.pex.spi
+* Created: Thu Apr  9 22:05:38 2026
+* Program "Calibre xRC"
+* Version "v2013.1_34.21"
+* 
+.include "cc.pex.spi.pex"
+.subckt SA_MUX16  BL BLB GND Pch Q QB SAen SAf SAt VDD
+* 
+* GND	GND
+* BLB	BLB
+* VDD	VDD
+* BL	BL
+* Q	Q
+* Pch	Pch
+* SAf	SAf
+* QB	QB
+* SAt	SAt
+* SAen	SAen
+XM5 N_BL_XM5_d N_SAen_XM5_g N_SAt_XM5_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.9 NFING=1 M=1 AS=0.1575 AD=0.09 PS=1.25 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM5@2 N_BL_XM5_d N_SAen_XM5@2_g N_SAt_XM5@2_s N_VDD_X28_noxref_minus psvtlp
++ L=0.06 W=0.9 NFING=1 M=1 AS=0.1575 AD=0.09 PS=1.25 PD=0.2 PO2ACT=0.24959
++ NGCON=1 lpe=3
+XM10 N_Q_XM10_d N_SAt_XM10_g N_VDD_XM10_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.035 AD=0.02 PS=0.55 PD=0.2 PO2ACT=0.272553 NGCON=1
++ lpe=3
+XM11 N_Q_XM10_d N_QB_XM11_g N_VDD_XM11_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.0289552 AD=0.02 PS=0.367164 PD=0.2 PO2ACT=0.364995
++ NGCON=1 lpe=3
+XM3 N_SAt_XM3_d N_SAf_XM3_g N_VDD_XM3_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.8 NFING=1 M=1 AS=0.14 AD=0.08 PS=1.15 PD=0.2 PO2ACT=0.24959 NGCON=1 lpe=3
+XM0 N_SAt_XM0_d N_Pch_XM0_g N_VDD_XM11_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.135 NFING=1 M=1 AS=0.0195448 AD=0.023625 PS=0.247836 PD=0.485
++ PO2ACT=0.285185 NGCON=1 lpe=3
+XM3@2 N_SAt_XM3_d N_SAf_XM3@2_g N_VDD_XM3@2_s N_VDD_X28_noxref_minus psvtlp
++ L=0.06 W=0.8 NFING=1 M=1 AS=0.14 AD=0.08 PS=1.15 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM2 N_SAt_XM2_d N_Pch_XM2_g N_SAf_XM2_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.135 NFING=1 M=1 AS=0.023625 AD=0.023625 PS=0.485 PD=0.485 PO2ACT=0.175
++ NGCON=1 lpe=3
+XM4 N_SAf_XM4_d N_SAt_XM4_g N_VDD_XM4_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.8 NFING=1 M=1 AS=0.14 AD=0.08 PS=1.15 PD=0.2 PO2ACT=0.24959 NGCON=1 lpe=3
+XM4@2 N_SAf_XM4_d N_SAt_XM4@2_g N_VDD_XM4@2_s N_VDD_X28_noxref_minus psvtlp
++ L=0.06 W=0.8 NFING=1 M=1 AS=0.14 AD=0.08 PS=1.15 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM1 N_SAf_XM1_d N_Pch_XM1_g N_VDD_XM1_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.135 NFING=1 M=1 AS=0.0195448 AD=0.023625 PS=0.247836 PD=0.485
++ PO2ACT=0.285185 NGCON=1 lpe=3
+XM16 N_QB_XM16_d N_Q_XM16_g N_VDD_XM1_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.0289552 AD=0.02 PS=0.367164 PD=0.2 PO2ACT=0.364995
++ NGCON=1 lpe=3
+XM17 N_QB_XM16_d N_SAf_XM17_g N_VDD_XM17_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.035 AD=0.02 PS=0.55 PD=0.2 PO2ACT=0.272553 NGCON=1
++ lpe=3
+XM6 N_BLB_XM6_d N_SAen_XM6_g N_SAf_XM6_s N_VDD_X28_noxref_minus psvtlp L=0.06
++ W=0.9 NFING=1 M=1 AS=0.1575 AD=0.09 PS=1.25 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM6@2 N_BLB_XM6_d N_SAen_XM6@2_g N_SAf_XM6@2_s N_VDD_X28_noxref_minus psvtlp
++ L=0.06 W=0.9 NFING=1 M=1 AS=0.1575 AD=0.09 PS=1.25 PD=0.2 PO2ACT=0.24959
++ NGCON=1 lpe=3
+XM15 net1 N_QB_XM15_g N_GND_XM15_s N_GND_X28_noxref_plus nsvtlp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.065 AD=0.0325 PS=0.85 PD=0.325 PO2ACT=0.41264 NGCON=1 lpe=0
+XM14 N_Q_XM14_d N_SAt_XM14_g net1 N_GND_X28_noxref_plus nsvtlp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.0325 AD=0.036 PS=0.325 PD=0.56 PO2ACT=0.287191 NGCON=1 lpe=0
+XM8 N_SAf_XM8_d N_SAt_XM8_g N_net4_XM8_s N_GND_X28_noxref_plus nsvtlp L=0.06
++ W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.24959 NGCON=1 lpe=3
+XM8@4 N_SAf_XM8_d N_SAt_XM8@4_g N_net4_XM8@4_s N_GND_X28_noxref_plus nsvtlp
++ L=0.06 W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM7 N_SAt_XM7_d N_SAf_XM7_g N_net4_XM7_s N_GND_X28_noxref_plus nsvtlp L=0.06
++ W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.24959 NGCON=1 lpe=3
+XM7@4 N_SAt_XM7_d N_SAf_XM7@4_g N_net4_XM7@4_s N_GND_X28_noxref_plus nsvtlp
++ L=0.06 W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM9 N_net4_XM9_d N_SAen_XM9_g N_GND_XM9_s N_GND_X28_noxref_plus nsvtlp L=0.06
++ W=2.8 NFING=1 M=1 AS=0.49 AD=0.49 PS=3.15 PD=3.15 PO2ACT=0.175 NGCON=2 lpe=3
+XM7@3 N_SAt_XM7@3_d N_SAf_XM7@3_g N_net4_XM7@3_s N_GND_X28_noxref_plus nsvtlp
++ L=0.06 W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM7@2 N_SAt_XM7@3_d N_SAf_XM7@2_g N_net4_XM7@2_s N_GND_X28_noxref_plus nsvtlp
++ L=0.06 W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM8@3 N_SAf_XM8@3_d N_SAt_XM8@3_g N_net4_XM8@3_s N_GND_X28_noxref_plus nsvtlp
++ L=0.06 W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM8@2 N_SAf_XM8@3_d N_SAt_XM8@2_g N_net4_XM8@2_s N_GND_X28_noxref_plus nsvtlp
++ L=0.06 W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.24959 NGCON=1
++ lpe=3
+XM19 net2 N_SAf_XM19_g N_GND_XM19_s N_GND_X28_noxref_plus nsvtlp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.036 AD=0.027 PS=0.56 PD=0.27 PO2ACT=0.265401 NGCON=1 lpe=0
+XM18 N_QB_XM18_d N_Q_XM18_g net2 N_GND_X28_noxref_plus nsvtlp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.027 AD=0.035 PS=0.27 PD=0.55 PO2ACT=0.260584 NGCON=1 lpe=0
+*
+.include "cc.pex.spi.SA_MUX16.pxi"
+*
+.ends
+*
+*

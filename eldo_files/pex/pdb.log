@@ -1,0 +1,427 @@
+//  Calibre v2013.1_34.21    Tue Mar 26 17:04:44 PDT 2013
+//  Calibre Utility Library   v0-11_9-2012-5    Tue Nov 20 15:37:50 PST 2012
+//  Litho Libraries v2013.1_34.21  Tue Mar 26 16:12:50 PDT 2013
+//
+//             Copyright Mentor Graphics Corporation 1996-2013
+//                             All Rights Reserved.
+//         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on Linux edatools-server2.iiitd.edu.in 2.6.32-754.35.1.el6.x86_64 #1 SMP Wed Sep 16 06:48:01 EDT 2020 x86_64 glibc 2.12/NPTL 2.12
+//  64 bit virtual addressing enabled
+//  Running ixl_cal_2013.1_34.21/pkgs/icv/pvt/calibre.alt -xrc -pdb -rcc ctrl
+//  Process ID: 6655
+//
+//  Starting time: Thu Apr  9 16:03:27 2026
+//
+//  Command line arguments used:   -64 -xrc -pdb -rcc ctrl
+//
+//  Running on 2 CPUs (pending licensing) 
+//
+
+//  Applying licensing policy...
+//  calibrexrc license acquired.
+
+//  Licensed Products
+//  -----------------
+//  Base products running on 2 cores:
+//  - xRC PDB
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-----          STANDARD VERIFICATION RULE FILE COMPILATION MODULE          -----
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+--- RULE FILE = ctrl
+
+SVRF MESSAGE on line 1355 of $DK_Cu_XRC_RCMODELSROOT/RCTYP/RCTYP.pex - Indie Mode is ON
+
+#!tvf
+tvf::VERBATIM {
+//
+//  Rule file generated on Wed Nov 22 22:00:07 IST 2023
+//     by Calibre Interactive - PEX (v2013.1_34.21)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+
+// +++ CUSTOMIZATION SETTINGS START +++
+#define LPE
+#define CHOOSE_CU STANDARD
+#define PEX_CORNER RCTYP
+VARIABLE JIVARO "OFF"
+#define LVSEXTASADPSPDPAR
+#define LVSEXTSTIPAR
+#define LVSEXTNGCONPARAM
+#undefine LVSEXTWPEPARAMS
+#undefine LVSEXTNRDNRSPARAM
+#undefine LVSEXTSERIESMOSRES
+#undefine NOERC1_TO_NOERC12
+#undefine ERC13_AND_ERC14
+#undefine FILTER_ERC
+#undefine ERC15
+#undefine NWELL_BIASING
+#undefine PWELL_BIASING
+#undefine SOFT_ERROR
+#undefine SENSE
+#undefine ANALOG
+#undefine LVS_DONOTCOMPARE_ESU_EDU
+#define LVS_DDNWPW_PARAMS
+#define LVSEXTNCRSD
+#undefine COMPARE_NFING
+#undefine LVSNOEXT_EXTHVI
+#define SWI_PORT_DEPTH PRIMARY
+#define SWI_TEXT_DEPTH PRIMARY
+#define INTERACTIVE
+VARIABLE SWI_TOLER_DIO_A 1
+VARIABLE SWI_TOLER_DIO_P 1
+VARIABLE SWI_TOLER_GATED_DIO_W 0
+VARIABLE SWI_TOLER_GATED_DIO_L 0
+VARIABLE SWI_TOLER_MOS_W 1
+VARIABLE SWI_TOLER_MOS_L 0
+VARIABLE SWI_TOLER_NON_SALICIDED_MOS_EDU 1
+VARIABLE SWI_TOLER_NON_SALICIDED_MOS_ESU 1
+VARIABLE SWI_TOLER_BIP_AE 1
+VARIABLE SWI_TOLER_BIP_PE 1
+VARIABLE SWI_TOLER_RES_W 0
+VARIABLE SWI_TOLER_RES_L 0
+VARIABLE SWI_TOLER_MOS_OXIDE_CAP_CAREA 1
+VARIABLE SWI_TOLER_MOS_OXIDE_CAP_CPERI 1
+VARIABLE SWI_TOLER_ELEM_PLATE_MET_CAP_CAREA 1
+VARIABLE SWI_TOLER_ELEM_PLATE_MET_CAP_CPERI 1
+VARIABLE SWI_TOLER_STK_STRIP_MET_CAP_CAREA 1
+VARIABLE SWI_TOLER_STK_STRIP_MET_CAP_CPERI 1
+VARIABLE SWI_TOLER_ELEM_FRINGE_MET_CAP_L 1
+VARIABLE SWI_TOLER_ELEM_FRINGE_MET_CAP_FS 1
+VARIABLE SWI_TOLER_STK_FRINGE_MET_CAP_L 1
+VARIABLE SWI_TOLER_DRAM_CAP_CAREA 1
+VARIABLE SWI_TOLER_DRAM_CAP_CPERI 1
+VARIABLE SWI_TOLER_TESTPOINTS_AREA 1
+VARIABLE SWI_TOLER_TESTPOINTS_PERI 1
+#undefine LVSNOFILTERUNUSEDDEVICE
+#define LVSEXTPARADIODE
+#undefine LVSEXTPROBE
+#define LVSNOEXTDEVONUNDEFBULK
+#undefine LVSEXTALLGATE
+#define LVSNOACCURATE
+#undefine ALLOW_SWAPPABILITY_FOR_MIM
+#undefine LVSNOEXTDDNWPW
+VARIABLE SWI_TOLER_CAP_A 1
+VARIABLE SWI_TOLER_CAP_P 1
+#undefine ELECT
+VARIABLE SWI_TOLER_CAP_C 1
+VARIABLE SWI_TOLER_RES_R 1
+VARIABLE SWI_TOLER_RES_MET_R 6
+#define ALLIANCE
+#undefine FIXWPE
+VARIABLE SWI_TOLER_IND_WD 0.3
+VARIABLE SWI_TOLER_IND_L 4
+VARIABLE SWI_TOLER_IND_LS 5
+VARIABLE SWI_TOLER_MOSRF_W 1
+VARIABLE SWI_TOLER_MOSRF_L 0
+VARIABLE SWI_TOLER_VAR 0.1
+VARIABLE SWI_TOLER_VAR_C 5
+
+// +++ CUSTOMIZATION SETTINGS END +++
+
+LAYOUT PATH  "senseamp.gds"
+LAYOUT PRIMARY "senseamp"
+LAYOUT SYSTEM GDSII
+
+SOURCE PATH "netlist.cdl"
+SOURCE PRIMARY "senseamp"
+SOURCE SYSTEM SPICE
+
+MASK SVDB DIRECTORY "svdb" QUERY XRC CCI
+
+LVS REPORT "senseamp.lvs.report"
+
+PEX NETLIST "netlist.pex.spi" ELDO 1 SOURCENAMES SEPARATOR "/" RCNAMED RLOCATION RWIDTH RLAYER
+PEX INDUCTANCE FREQUENCY 10000000000.0
+PEX INDUCTANCE FILTER APPROX
+PEX INDUCTANCE RANGE 0
+PEX INDUCTANCE RETURNPATH GANDP
+PEX REDUCE ANALOG NO
+PEX BA MAPFILE "/usr/local/cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/PLS_CALIBREXRC/MODULES/DKcmos065lpgp_7m4x0y2z_calibrexrc/calibrexrcBAMapFile"
+PEX NETLIST UPPERCASE KEYWORDS NO
+PEX NETLIST VIRTUAL CONNECT NO
+PEX NETLIST NOXREF NET NAMES YES
+PEX NETLIST MUTUAL RESISTANCE YES
+LVS REPORT OPTION A B C D
+LVS FILTER UNUSED OPTION NONE SOURCE
+LVS FILTER UNUSED OPTION NONE LAYOUT
+LVS POWER NAME
+"VDD"
+"vdd"
+"vdd!"
+"vdd;"
+"VDDS"
+"vdds"
+"vdds!"
+"vdds;"
+
+LVS GROUND NAME
+"GND"
+"gnd"
+"gnd!"
+"gnd;"
+"GNDS"
+"gnds"
+"gnds!"
+"gnds;"
+
+
+LVS RECOGNIZE GATES NONE
+
+
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+DRC ICSTATION YES
+
+}
+
+
+tvf::VERBATIM {
+INCLUDE "/usr/local/cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/PLS_CALIBREXRC/MODULES/DKcmos065lpgp_7m4x0y2z_calibrexrc/calibrexrc.cmd"
+}
+
+
+source "/usr/local/cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/PLS_CALIBREXRC/MODULES/DKcmos065lpgp_7m4x0y2z_calibrexrc/calibrexrclvs_cgi"
+
+
+--- STANDARD VERIFICATION RULE FILE COMPILATION MODULE COMPLETED.  CPU TIME = 1  REAL TIME = 1  LVHEAP = 26/27/129
+
+SVRF MESSAGE on line 1783 of ctrl - Indie Mode is ON
+
+--- HDB RESTORATION COMPLETED.  CPU TIME = 1  REAL TIME = 1  MALLOC = 281/281/281
+
+--- CALIBRE xRC\xL::ACQUIRING AND VERIFYING EXTRACTION SPECIFIC DATA ---
+	Requested information:              
+xRC\xL SPECIFIC DATA ACQUISITION complete: CPU TIME = 0  REAL TIME = 0 LVHEAP = 213/214/240 MALLOC = 281/281/281
+
+--- CALIBRE xRC::HIERARCHICAL PARASITIC EXTRACTION --- Thu Apr  9 16:03:31 2026
+
+-----  CALIBRE xRC::HIERARCHICAL PARASITIC EXTRACTOR - EXECUTIVE MODULE    -----
+
+DISTRIBUTED PARASITICS EXTRACTION
+=================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+PARASITIC EXTRACTION  BEGIN 
+
+Searching for connectivity for pin layer PLUSGATEDDION18_FINAL
+Connectivity assigned to layer PWELLC_FINAL
+Searching for connectivity for pin layer MINUSGATEDDIOP18_FINAL
+Connectivity assigned to layer NWELLC_FINAL
+Searching for connectivity for pin layer PLUSGATEDDION25_FINAL
+Connectivity assigned to layer PWELLC_FINAL
+Searching for connectivity for pin layer MINUSGATEDDIOP25_FINAL
+Connectivity assigned to layer NWELLC_FINAL
+Searching for connectivity for pin layer NWELLDRIFT_FINAL
+Connectivity assigned to layer SALI_FINAL
+Searching for connectivity for pin layer NWELLDRIFT_18_FINAL
+Connectivity assigned to layer SALI_FINAL
+Searching for connectivity for pin layer PWELLDRIFT_FINAL
+Connectivity assigned to layer SALI_FINAL
+Searching for connectivity for pin layer PWELLDRIFT_18_FINAL
+Connectivity assigned to layer SALI_FINAL
+Searching for connectivity for pin layer ST_PWISO_FINAL
+Connectivity assigned to layer PWELLC_FINAL
+
+
+IN-DIE GEOMETRY VARIATION  senseamp BEGIN 
+IN-DIE GEOMETRY VARIATION  senseamp COMPLETE: CPU TIME = 0  REAL TIME = 0 LVHEAP = 281/281/282 MALLOC = 402/402/402
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+RESISTANCE EXTRACTION  BEGIN 
+
+
+RESISTANCE EXTRACTION Cell:  senseamp BEGIN 
+RESISTANCE EXTRACTION Cell:  senseamp COMPLETE: CPU TIME = 0  REAL TIME = 0 LVHEAP = 287/288/288 MALLOC = 411/411/411
+
+RESISTANCE EXTRACTION  COMPLETE: CPU TIME = 0  REAL TIME = 0 LVHEAP = 285/288/288 MALLOC = 411/411/411
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CAPACITANCE EXTRACTION Cell:  senseamp BEGIN 
+
+Extraction Mode D
+ Empty Layer PWELLDRIFT_18_FINAL
+ Empty Layer NWELLDRIFT_18_FINAL
+ Empty Layer PWELLDRIFT_FINAL
+ Empty Layer NWELLDRIFT_FINAL
+ Empty Layer PLUSGATEDDION18_FINAL
+ Empty Layer PLUSGATEDDION25_FINAL
+ Empty Layer MINUSGATEDDIOP18_FINAL
+ Empty Layer MINUSGATEDDIOP25_FINAL
+ Empty Layer SUBS_FINAL_BBOX
+ Empty Layer ST_PWISO_FINAL
+ Empty Layer NISO_FINAL
+ Empty Layer OD_MOMRF_shield
+ Empty Layer NDIFSI_FINAL_S
+ Empty Layer NDIFSI_FINAL_D
+ Empty Layer DRAIN_NDRIFT_HV
+ Empty Layer SOURCE_NDRIFT_HV
+ Empty Layer NEXT18_DRAIN
+ Empty Layer NEXT18_SOURCE
+ Empty Layer RES_RPDIFFLADDER_TERM_FINAL
+ Empty Layer OD_FRINGE
+ Empty Layer SOURCE_NDRIFT
+ Empty Layer SOURCE_NDRIFT_18
+ Empty Layer PDIFSI_FINAL_S
+ Empty Layer PDIFSI_FINAL_D
+ Empty Layer DRAIN_PDRIFT_HV
+ Empty Layer SOURCE_PDRIFT_HV
+ Empty Layer PEXT18_DRAIN
+ Empty Layer PEXT18_SOURCE
+ Empty Layer SOURCE_PDRIFT
+ Empty Layer SOURCE_PDRIFT_18
+ Empty Layer OD_tile
+ Empty Layer PO_FRINGE
+ Empty Layer P_POLYTERM_LL
+ Empty Layer P_POLYTERM_LL18
+ Empty Layer P_POLYTERM_LL25
+ Empty Layer P_POLYTERM_HS
+ Empty Layer N_POLYTERM_LL
+ Empty Layer N_POLYTERM_LL18
+ Empty Layer N_POLYTERM_LL25
+ Empty Layer N_POLYTERM_HS
+ Empty Layer P_POLYTERM_HPA
+ Empty Layer N_POLYTERM_HPA
+ Empty Layer CPWPO_1V8_TERM_FINAL
+ Empty Layer CPWPO_2V5_TERM_FINAL
+ Empty Layer CNWPO_1V8_TERM_FINAL
+ Empty Layer CNWPO_2V5_TERM_FINAL
+ Empty Layer CP1NW_SO_TERM_FINAL
+ Empty Layer CP1PW_SO_TERM_FINAL
+ Empty Layer PO_tile
+ Empty Layer METAL_MOMRF_M1_0
+ Empty Layer METAL_MOMRF_M1_1
+ Empty Layer SHIELD_PIN_MOMRF
+ Empty Layer M1PLATE
+ Empty Layer CFRM1_TERM
+ Empty Layer A_PO_M1
+ Empty Layer WALL_M1
+ Empty Layer B_OD_M1
+ Empty Layer SHODter
+ Empty Layer SHPOter
+ Empty Layer CAPSTACK5X1_M1_MINUS
+ Empty Layer CAPSTACK5X1_M1_MINUS_0
+ Empty Layer CAPSTACK5X1_M1_MINUS_1
+ Empty Layer CAPSTACK3X1_M1_MINUS
+ Empty Layer CAPSTACK3X1_M1_MINUS_0
+ Empty Layer M1i_tiles
+ Empty Layer PINS_MOMRF_M2
+ Empty Layer METAL_MOMRF_BOT_M2
+ Empty Layer METAL_MOMRF_M2_0
+ Empty Layer METAL_MOMRF_M2_1
+ Empty Layer M2XPLATE
+ Empty Layer CFRM2X_TERM
+ Empty Layer A_PO_M2X
+ Empty Layer WALL_M2X
+ Empty Layer B_OD_M2X
+ Empty Layer CAPSTACK5X1_M2X_PLUS
+ Empty Layer CAPSTACK5X1_M2X_PLUS_0
+ Empty Layer CAPSTACK3X1_M2X_PLUS
+ Empty Layer CAPSTACK4X2X_M2X_MINUS
+ Empty Layer CAPSTACK4X2X_M2X_MINUS_0
+ Empty Layer M2i_tiles
+ Empty Layer PINS_MOMRF_M3
+ Empty Layer METAL_MOMRF_BOT_M3
+ Empty Layer METAL_MOMRF_M3_0
+ Empty Layer METAL_MOMRF_M3_1
+ Empty Layer M3XPLATE
+ Empty Layer CFRM3X_TERM
+ Empty Layer A_PO_M3X
+ Empty Layer WALL_M3X
+ Empty Layer B_OD_M3X
+ Empty Layer CAPSTACK5X1_M3X
+ Empty Layer CAPSTACK5X3X_M3X_MINUS
+ Empty Layer CAPSTACK5X3X_M3X_MINUS_0
+ Empty Layer CAPSTACK3X1_M3X
+ Empty Layer CAPSTACK4X2X_M3X_PLUS
+ Empty Layer M3i_tiles
+ Empty Layer M3X_FINAL
+ Empty Layer PINS_MOMRF_M4
+ Empty Layer METAL_MOMRF_BOT_M4
+ Empty Layer METAL_MOMRF_M4_0
+ Empty Layer METAL_MOMRF_M4_1
+ Empty Layer M4XPLATE
+ Empty Layer CFRM4X_TERM
+ Empty Layer A_PO_M4X
+ Empty Layer WALL_M4X
+ Empty Layer B_OD_M4X
+ Empty Layer CAPSTACK5X1_M4X
+ Empty Layer CAPSTACK5X3X_M4X_PLUS
+ Empty Layer CAPSTACK4X2X_M4X
+ Empty Layer M4i_tiles
+ Empty Layer M4X_FINAL
+ Empty Layer METAL_MOMRF_M5_0
+ Empty Layer METAL_MOMRF_M5_1
+ Empty Layer M5XPLATE
+ Empty Layer CFRM5X_TERM
+ Empty Layer A_PO_M5X
+ Empty Layer WALL_M5X
+ Empty Layer B_OD_M5X
+ Empty Layer CAPSTACK5X1_M5X
+ Empty Layer CAPSTACK5X3X_M5X
+ Empty Layer M5i_tiles
+ Empty Layer M5X_FINAL
+ Empty Layer BOTMIM_tile
+ Empty Layer BOTMIM_FINAL
+ Empty Layer MKTOPMIM_tile
+ Empty Layer TOPMIM_FINAL
+ Empty Layer M6ZPLATE
+ Empty Layer CFRM6Z_TERM
+ Empty Layer WALL_M6Z
+ Empty Layer M6Z_tile
+ Empty Layer M6Z_FINAL
+ Empty Layer M7ZPLATE
+ Empty Layer CFRM7Z_TERM
+ Empty Layer M7Z_tile
+ Empty Layer M7Z_FINAL
+ Empty Layer AP_tile
+ Empty Layer ALUCAP_FINAL
+   Grid configuration 1:1 = 1 bins
+=======================================================
+Extracting bin 1 of 1
+   Data preparation: CPU TIME bin(1) = 0  REAL TIME = 0 LVHEAP = 294/294/294 MALLOC = 415/415/415
+   Extraction: CPU TIME bin(1) = 0 REAL TIME = 0  MALLOC = 417/417/417
+Bin 1  complete: CPU TIME = 0   REAL TIME = 0 LVHEAP = 290/294/294 MALLOC = 417/417/417
+TOTAL BINS complete: CPU TIME = 0  REAL TIME = 0 LVHEAP = 287/294/294 MALLOC = 417/417/417 
+=======================================================
+Extracting top level
+   Data preparation: CPU TIME = 0  REAL TIME = 0 LVHEAP = 287/294/294 MALLOC = 417/417/417
+   Extraction: CPU TIME = 0  REAL TIME = 0 LVHEAP = 223/240/304  MALLOC = 425/425/425
+Top level complete: CPU TIME = 0  REAL TIME = 0 MALLOC = 425/425/425
+CAPACITANCE EXTRACTION Cell:  senseamp COMPLETE: CPU TIME = -1  REAL TIME = 0 LVHEAP = 221/240/304 MALLOC = 425/425/425
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+--- CALIBRE xRC::HIERARCHICAL PARASITIC EXTRACTION COMPLETED - Thu Apr  9 16:03:31 2026
+
+
+  ========================================================================
+                  CALIBRE xRC WARNING / ERROR Summary
+  ------------------------------------------------------------------------
+                        xRC Warnings  =  5
+                          xRC Errors  =  0
+  ========================================================================
+
+--- TOTAL CPU TIME = 2  REAL TIME = 2  LVHEAP = 32/81/304  MALLOC = 388/388/425  ELAPSED TIME = 4
+

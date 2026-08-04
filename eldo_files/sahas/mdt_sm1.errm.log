@@ -1,0 +1,3 @@
+START report: Thu Apr  9 16:53:50 2026 
+** Error: (eldo - 63)  In file "./mdt_sm1.cir" line 6:
++   Unable to include file "sa.src.net".

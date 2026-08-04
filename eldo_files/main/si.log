@@ -1,0 +1,116 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.38s.
+UKER_INFO UNICAD KERNEL /usr/local/cmos065_536/UnicadKernel@3.5 loading...
+the simrc of LIB065 in "lib" has been loaded successfully
+*WARNING* LIB functional from File /home/aditya23043/cmos65/cds.lib Line 9 redefines
+LIB functional from File /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+Insert UNDEFINE functional
+before DEFINE functional
+    in /home/aditya23043/cmos65/cds.lib
+Or remove or comment out DEFINE functional
+    in /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+to suppress this warning message.
+*WARNING* LIB US_8ths from File /home/aditya23043/cmos65/cds.lib Line 11 redefines
+LIB US_8ths from File /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+Insert UNDEFINE US_8ths
+before DEFINE US_8ths
+    in /home/aditya23043/cmos65/cds.lib
+Or remove or comment out DEFINE US_8ths
+    in /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+to suppress this warning message.
+*WARNING* LIB basic from File /home/aditya23043/cmos65/cds.lib Line 22 redefines
+LIB basic from File /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /home/aditya23043/cmos65/cds.lib
+Or remove or comment out DEFINE basic
+    in /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+to suppress this warning message.
+*WARNING* '/home/aditya23043/cmos65/cds.lib', Line 23: lib name /cadence/FOUNDRY/analog/45nm/gpdk045/../models/spectre/gpdk045.scs is not a legal lib name.
+*WARNING* '/home/aditya23043/cmos65/cds.lib', Line 23: Skipping: 'DEFINE'
+MPS timeout is set to '60' seconds.
+*WARNING* LIB functional from File /home/aditya23043/cmos65/cds.lib Line 9 redefines
+LIB functional from File /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+Insert UNDEFINE functional
+before DEFINE functional
+    in /home/aditya23043/cmos65/cds.lib
+Or remove or comment out DEFINE functional
+    in /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+to suppress this warning message.
+*WARNING* LIB US_8ths from File /home/aditya23043/cmos65/cds.lib Line 11 redefines
+LIB US_8ths from File /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+Insert UNDEFINE US_8ths
+before DEFINE US_8ths
+    in /home/aditya23043/cmos65/cds.lib
+Or remove or comment out DEFINE US_8ths
+    in /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+to suppress this warning message.
+*WARNING* LIB basic from File /home/aditya23043/cmos65/cds.lib Line 22 redefines
+LIB basic from File /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+Insert UNDEFINE basic
+before DEFINE basic
+    in /home/aditya23043/cmos65/cds.lib
+Or remove or comment out DEFINE basic
+    in /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/composer/cds.lib
+to suppress this warning message.
+*WARNING* '/home/aditya23043/cmos65/cds.lib', Line 23: lib name /cadence/FOUNDRY/analog/45nm/gpdk045/../models/spectre/gpdk045.scs is not a legal lib name.
+*WARNING* '/home/aditya23043/cmos65/cds.lib', Line 23: Skipping: 'DEFINE'
+*WARNING* LIB analogLib from File /home/aditya23043/cmos65/cds.lib Line 24 redefines
+LIB analogLib from File /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+Insert UNDEFINE analogLib
+before DEFINE analogLib
+    in /home/aditya23043/cmos65/cds.lib
+Or remove or comment out DEFINE analogLib
+    in /cadence/IC618/tools.lnx86/dfII/etc/cdsDotLibs/artist/cds.lib
+to suppress this warning message.
+Loading libInit file of library "cmos065" ...
+"   Loading 'callback_common.il' ..."
+"   Loading 'callback_bipolar.il' ..."
+"   Loading 'callback_celemfringe.il' ..."
+"   Loading 'callback_polyCap.il' ..."
+"   Loading 'callback_diode.il' ..."
+"   Loading 'callback_gatedDiode.il' ..."
+"   Loading 'callback_drift.il' ..."
+"   Loading 'callback_mosfet.il' ..."
+"   Loading 'callback_resistor.il' ..."
+"   Loading 'callback_rnpofuse.il' ..."
+"   Loading 'callback_cfringe.il' ..."
+"   Loading 'callback_cmetal.il' ..."
+"   Loading 'callback_cstripe.il' ..."
+"   Loading 'callback_mimCap.il' ..."
+"   Loading 'callback_sealring.il' ..."
+"   Loading 'callback_pgtext.il' ..."
+"   Loading 'callback_stackvia.il' ..."
+"   Loading 'callback_backannotation.il' ..."
+"   Loading 'equation_common.il' ..."
+"   Loading 'equation_polyCap.il' ..."
+"   Loading 'equation_mosfet.il' ..."
+"   Loading 'equation_resistor.il' ..."
+"   Loading 'equation_cfringe.il' ..."
+"   Loading 'equation_cmetal.il' ..."
+"   Loading 'equation_cstripe.il' ..."
+"   Loading 'equation_mimCap.il' ..."
+"   Loading 'label.il' ..."
+"   Loading 'netlist.il' ..."
+"   Loading 'param.il' ..."
+"   Loading 'cmos065customization.il' ..."
+"   Loading 'cmos065contact_callback.il' ..."
+"   Loading 'commonPcellProcs.il' ..."
+"   Loading 'genericSealring.il' ..."
+"   Loading 'pgtext_drc_clean_function.il' ..."
+"   Loading 'DKPcellLib.il' ..."
+"   Loading 'genericTmpSealring.il' ..."
+"   Loading 'genericSealring_1.il' ..."
+"   Loading 'genericLayersAndDRs.il' ..."
+
+   Defining DRF path ... 
+---> defUserInitProc for le: DK_cmos065_leUserInitProc
+   Loading user file ... 
+*U2DK-MSG* Loading USER-LEVEL CDF to library STlib...
+*U2DK-MSG* Loading /usr/local/cmos065_536/DK_cmos065lpgp_7m4x0y2z_2V51V8@5.3.6/DATA/STLIB/local/default.u2dk file...
+"Loading pInfo.loader"
+*U2DK-MSG*	--> No default file found in Design Kit. Use current STlib "default.u2dk" variables.
+Loading cdf.cxt 
+"*U2DK-MSG* CDF data for STlib cells saved"
+Loading successful 
+Running Artist Hierarchical Netlisting ...
+End netlisting Mar 25 18:20:27 2026

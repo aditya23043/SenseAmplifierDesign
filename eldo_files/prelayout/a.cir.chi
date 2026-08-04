@@ -1,0 +1,22 @@
+  Run on edatools-server2.iiitd.edu.in (Linux 2.6.32-754.35.1.el6.x86_64)
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : aditya23043@edatools-server2.iiitd.edu.in
+*** OS    : Red Hat Enterprise Linux Server release 6.10 (Santiago) [VCO = aol]
+*** CPU   :
+    Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz
+    Number of physical processors     : 2
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 36
+    Number of logical processors      : 72
+*** Freq  : 800.000MHz
+*** Cache : 39936 KB
+*** MEM   : 528955884 kB
+*** Date  : Thu Apr  9 23:55:00 2026
+
+/mentor/AMS/aol/bin/eldo_64.exe -i a.cir 
+
+ERROR 1: Unable to open file a.cir
++   No such file or directory

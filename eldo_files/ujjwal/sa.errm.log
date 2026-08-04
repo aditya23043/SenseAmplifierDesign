@@ -1,0 +1,5 @@
+START report: Thu Apr  9 17:02:34 2026 
+** Error: (eldo - 63)  In file "./netlist.pex.spi" line 6:
++   Unable to include file "netlist.pex.spi.pex".
+** Error: (eldo - 63)  In file "./netlist.pex.spi" line 61:
++   Unable to include file "netlist.pex.spi.senseamp.pxi".

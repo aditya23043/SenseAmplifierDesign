@@ -1,0 +1,5 @@
+START report: Wed Mar 18 22:56:22 2026 
+** Error: (eldo - 1670)  In file "./netlist.src.net" line 51:
++   OBJECT "CC1": A value is expected after keyword $[CP].
+** Error: (eldo - 1670)  In file "./netlist.src.net" line 52:
++   OBJECT "CC0": A value is expected after keyword $[CP].

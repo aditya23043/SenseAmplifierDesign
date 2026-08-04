@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/aditya23043/eldo/MDT_Project/sahas/pex
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT sm.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST mdt_sm1.cdl
+lvs_LvsOutFile RULES_FILE ctrl
+lvs_LvsRunTimes 1775754668 1775754668

@@ -1,0 +1,82 @@
+*
+* Have atleast 3 lines of space for some reason otherwise eldo glitches out
+*
+
+.include /modelfile_65nm/minNminP.cir
+.include sa.src.net
+
+X1 BL BLB Q QB SAF SAT SAen gnd pch vdd senseamp 
+
+.param SUPPLY = 1.08
+.param tend = 4n
+.TEMP = 125
+
+.param bl_pch_start = 220p;
+*.step param bl_pch_start 150p 1n 50p;
+
+* POWER
+v_dd vdd 0 SUPPLY
+v_gnd gnd 0 0
+
+* BitLine
+* v_bl BL 0 SUPPLY
+v_bl BL 0 PWL(
++	0 {SUPPLY}
++	2n {SUPPLY}
++ 	3.5n 0.88
+		)
+*v_blb BLB 0 PWL(
+*+				0 {SUPPLY} 
+*+				bl_pch_start (1.08*(7n-bl_pch_start)/7n)
+*+				{bl_pch_start+500p} {SUPPLY}
+*+)
+v_blb BLB 0 PWL(
++				0 {SUPPLY} 
+*+				12n 0
++				1.5n 0.88
++				2n {SUPPLY}
++)
+
+*.param DV = 0.03
+*v_blb BLB 0 PWL(0 {SUPPLY} 150p {SUPPLY} 200p {SUPPLY-DV})
+*.step param DV 0.05 0.1 0.010
+
+* Pre-charge (active low)
+v_pch pch gnd PULSE (0 {SUPPLY} 50p 10p 10p 250p 2n)
+* v_pch pch gnd {SUPPLY}
+
+* (low_voltage high_voltage starting_delay rise_time fall_time on_pulse_width time_period)
+v1 SAen gnd PULSE (0 {SUPPLY} 150p 10p 10p 100p 2n)
+
+.IC V(Q) = 1.08
+.IC V(QB) = 0
+
+.probe v(*) v(X1.*)
+.probe i(*)
+
+*.mc 100
+.tran 1p tend
+
+* --- MEASUREMENTS ---
+
+.meas tran sa_delay TRIG v(SAen) val={SUPPLY*0.9} rise=1 
++                  	TARG v(Q)    val={SUPPLY*0.1} fall=1
+
+E_DIFF diff_node 0 VOL='v(BL)-v(BLB)'
+.meas tran t_cross WHEN v(QB)=(v(Q)+20m) rise=1 TD=200p
+.meas tran diff_v FIND v(diff_node) WHEN v(QB)=(v(Q)+20m) rise=1 TD=200p
+
+.meas tran decision PARAM = v(QB) - v(Q) AT=400p
+
+* ---
+
+* FSM STAGES
+*
+* Start BL,BLB at HIGH (precharge BL)
+* Read operation begins (BLB discharges)
+* Sense amplifier enable (t = 150 ps)
+* Differential amplification
+* SA output -> Output latch
+* Precharge SA i.e. set pch = LOW (t = 500ps)
+* Precharge BL (t = 500ps)
+* De-assert SAen (t = 550ps)

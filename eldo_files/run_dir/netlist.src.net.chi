@@ -1,0 +1,130 @@
+  Run on edatools-server2.iiitd.edu.in (Linux 2.6.32-754.35.1.el6.x86_64)
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : aditya23043@edatools-server2.iiitd.edu.in
+*** OS    : Red Hat Enterprise Linux Server release 6.10 (Santiago) [VCO = aol]
+*** CPU   :
+    Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz
+    Number of physical processors     : 2
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 36
+    Number of logical processors      : 72
+*** Freq  : 800.000MHz
+*** Cache : 39936 KB
+*** MEM   : 528955884 kB
+*** Date  : Wed Mar 18 22:56:22 2026
+
+/mentor/AMS/aol/bin/eldo_64.exe -i netlist.src.net 
+
+
+***** PRE-PROCESSING ...
+
+1*******18-Mar-26 *******  ELDO 12.2 (64 bits)  (v7.8_1.1)  *******22:56:22******
+
+0************************************************************************
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  * auCdl Netlist:
+    3  * 
+    4  * Library Name:  MDT_Project
+    5  * Top Cell Name: senseamp
+    6  * View Name:     schematic
+    7  * Netlisted on:  Mar 18 22:30:25 2026
+    8  ************************************************************************
+    9  
+   10  *.BIPOLAR
+   11  *.RESI = 2000 
+   12  *.RESVAL
+   13  *.CAPVAL
+   14  *.DIOPERI
+   15  *.DIOAREA
+   16  *.EQUATION
+   17  *.SCALE METER
+   18  *.MEGA
+   19  .PARAM
+   20  
+   21  
+   22  
+   23  ************************************************************************
+   24  * Library Name: MDT_Project
+   25  * Cell Name:    senseamp
+   26  * View Name:    schematic
+   27  ************************************************************************
+   28  
+   29  .SUBCKT SENSEAMP SAEN GND PCH VDD
+   30  *.PININFO SAen:I pch:I vdd:I gnd:B
+   31  XM10 NET012 PCH VDD VDD PSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 M=1 
+   32  + ACCURATEFLOW=0
+   33  XM9 NET017 PCH VDD VDD PSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 M=1 
+   34  + ACCURATEFLOW=0
+   35  XM8 NET017 PCH NET012 NET012 PSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 M=1 
+   36  + ACCURATEFLOW=0
+   37  XM7 NET017 SAEN NET33 NET33 PSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 M=1 
+   38  + ACCURATEFLOW=0
+   39  XM3 NET017 NET012 VDD VDD PSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 M=1 
+   40  + ACCURATEFLOW=0
+   41  XM2 NET012 NET017 VDD VDD PSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 M=1 
+   42  + ACCURATEFLOW=0
+   43  XM0 NET012 SAEN NET24 NET24 PSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 M=1 
+   44  + ACCURATEFLOW=0
+   45  XM5 NET26 SAEN GND GND NSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 M=1 
+   46  + ACCURATEFLOW=0
+   47  XM4 NET017 NET012 NET26 NET26 NSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 
+   48  + M=1 ACCURATEFLOW=0
+   49  XM1 NET012 NET017 NET26 NET26 NSVTLP W=0.135 L=0.06 NFING=1 SENSE=0 NGCON=1 
+   50  + M=1 ACCURATEFLOW=0
+   51  CC1 NET33 GND 200F $[CP]
+ERROR  254: In file "./netlist.src.net" line 51:
++   OBJECT "CC1": Unknown parameter $[CP]
+ERROR 1670: In file "./netlist.src.net" line 51:
++   OBJECT "CC1": A value is expected after keyword $[CP].
+   52  CC0 NET24 GND 200F $[CP]
+ERROR  254: In file "./netlist.src.net" line 52:
++   OBJECT "CC0": Unknown parameter $[CP]
+ERROR 1670: In file "./netlist.src.net" line 52:
++   OBJECT "CC0": A value is expected after keyword $[CP].
+   53  .ENDS
+   54  
+   55  .END
+
+End of file 
+
+
+***** 4  error(s). 
+***** 0  warning(s). 
+
+
+***** GENERATION ...
+
+
+***** 4  error(s). 
+***** 0  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (MB):    240
+0 elements
+0 nodes 
+0 input signals
+
+Check your input netlist...
+
+***>MESSAGE SUMMARY: 4 errors
+
+***>GLOBAL CPU TIME 0s 020ms <***
+
+
+***>GLOBAL ELAPSED TIME 0s <***
+
+
+  Job started at 18-Mar-2026 22:56:22
+  Job end at     18-Mar-2026 22:56:22
+
+  Run on edatools-server2.iiitd.edu.in (Linux 2.6.32-754.35.1.el6.x86_64)
+

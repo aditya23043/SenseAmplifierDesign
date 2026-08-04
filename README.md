@@ -1,5 +1,7 @@
 # Conventional Latch Type Sense Amplifier
 
+<p align="center"><img src="./assets/mdt3.png" width="60%"></p>
+
 ## Objective
 
 Design of a conventional latch type sense amplifier assuming a MUX16 configuration for the load

@@ -1,0 +1,83 @@
+hnlLastStopCellInfo = '(
+                           ( "cmos065" "psvtlp" "auCdl" "40" "1318957053" )
+                          ( "cmos065" "nsvtlp" "auCdl" "41" "1318957038" )
+                       )
+hnlLastMaxNameLength = 128
+hnlLastNamePrefix = "hnl_"
+hnlLastNetNamePrefix = "N"
+hnlLastInstNamePrefix = ""
+hnlLastModelNamePrefix = ""
+hnlLastGlobalNetPrefix = "G"
+hnlLastModulePrefix = "sub"
+hnlLastHierarchyDelimiter = "."
+hnlLastMapNetFirstChar = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            "0"
+                            "1"
+                            "2"
+                            "3"
+                            "4"
+                            "5"
+                            "6"
+                            "7"
+                            "8"
+                            "9"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastMapNetInName = '(
+                           ( "!" )
+                           ( "$" )
+                           ( "(" )
+                           ( ")" )
+                           ( "+" )
+                           ( "," )
+                           ( "." )
+                           ( "/" )
+                           ( "[" )
+                           ( "]" )
+                          )
+hnlLastMapInstFirstChar = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            "0"
+                            "1"
+                            "2"
+                            "3"
+                            "4"
+                            "5"
+                            "6"
+                            "7"
+                            "8"
+                            "9"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastMapInstInName = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastInstNameDifferentFrom = '( )
+hnlLastModelNameDifferentFrom = '( )
+hnlLastNetNameDifferentFrom = '( )
+hnlLastTermNameDifferentFrom = '( )
+hnlLastParamNameDifferentFrom = '( )
+hnlLastLibInfo = '(
+                    ( "MDT_Project" "1773822562" )
+                  )
+hnlLastDesignVars = '( )

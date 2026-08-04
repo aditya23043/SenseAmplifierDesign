@@ -1,0 +1,74 @@
+*
+* Have atleast 3 lines of space for some reason otherwise eldo glitches out
+*
+
+.include /modelfile_65nm/minNminP.cir
+.include sa.src.net
+
+X1 BL BLB Q QB SAF SAT SAen gnd pch vdd senseamp 
+
+.param SUPPLY = 1.08
+.param tend = 4n
+.TEMP = 125
+
+* FSM STAGES
+*
+* Start BL,BLB at HIGH (precharge BL)
+* Read operation begins (BLB discharges)
+* Sense amplifier enable (t = 150 ps)
+* Differential amplification
+* SA output -> Output latch
+* De-assert SAen
+* Precharge SA
+* Precharge BL
+
+
+* POWER
+v_dd vdd 0 SUPPLY
+v_gnd gnd 0 0
+
+* BitLines
+v_bl BL 0 PWL(
++	0 {SUPPLY}
+* +	2n {SUPPLY}
+* + 	3.5n 0.88
+		)
+
+v_blb BLB 0 PWL(
++				0 {SUPPLY} 
++				1.5n 0.88
+* +				1m 0.98
+* +				2n {SUPPLY}
++)
+
+* (0.88-1.08)/(1.5-0) = x
+* (x-1.08) / 1.5 = -0.100
+* x - 1.08= -0.150
+* 0.93
+
+* Pre-charge (active low)
+v_pch pch gnd PULSE (0 {SUPPLY} 50p 10p 10p 250p 4n)
+* v_pch pch gnd {SUPPLY}
+
+* (low_voltage high_voltage starting_delay rise_time fall_time on_pulse_width time_period)
+v1 SAen gnd PULSE (0 {SUPPLY} 150p 10p 10p 100p 4n)
+
+.meas tran DELAY TRIG v(SAen) val={SUPPLY*0.9} rise=1 
++                TARG v(Q)    val={SUPPLY*0.1} fall=1
+
+* E_DIFF diff_node 0 VOL='v(SAF)-v(SAT)'
+* E_COND cond_node 0 VOL='v(Q)-v(QB)'
+* .meas tran DIFF FIND v(diff_node) WHEN v(cond_node)=0
+
+E_DIFF diff_node 0 VOL='v(SAF)-v(SAT)'
+.meas tran DIFF FIND v(diff_node) WHEN v(SAen)={1.08*0.9}
+
+.mc 1000
+
+.IC V(Q) = 1.08
+.IC V(QB) = 0
+
+.probe v(*) v(X1.*)
+.probe i(*)
+
+.tran 1p tend

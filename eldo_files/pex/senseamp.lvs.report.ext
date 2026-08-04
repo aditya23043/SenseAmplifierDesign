@@ -1,0 +1,22 @@
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         senseamp.lvs.report.ext
+LAYOUT NAME:              senseamp.gds ('senseamp')
+CREATION TIME:            Thu Apr  9 16:03:22 2026
+CURRENT DIRECTORY:        /home/aditya23043/eldo/MDT_Project/pex
+USER NAME:                aditya23043
+CALIBRE VERSION:          v2013.1_34.21    Tue Mar 26 17:04:44 PDT 2013
+
+
+
+NOTE: LVS PUSH DEVICES is enabled along with pin location information, because LVS PUSH DEVICES SEPARATE PROPERTIES as also specified.
+

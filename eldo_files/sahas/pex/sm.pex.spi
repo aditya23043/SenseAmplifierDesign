@@ -1,0 +1,82 @@
+* File: sm.pex.spi
+* Created: Thu Apr  9 22:41:15 2026
+* Program "Calibre xRC"
+* Version "v2013.1_34.21"
+* 
+.include "sm.pex.spi.pex"
+.subckt mdt_sm1  BL BLB Q QB SAF SAT SAen gnd pch vdd
+* 
+* BLB	BLB
+* vdd	vdd
+* gnd	gnd
+* BL	BL
+* Q	Q
+* pch	pch
+* SAT	SAT
+* SAF	SAF
+* QB	QB
+* SAen	SAen
+XM5 N_SAF_XM5_d N_SAen_XM5_g N_BL_XM5_s N_vdd_X24_noxref_minus psvtlp L=0.06
++ W=1.8 NFING=1 M=1 AS=0.315 AD=0.315 PS=2.15 PD=2.15 PO2ACT=0.175 NGCON=1 lpe=3
+XM11 N_Q_XM11_d N_QB_XM11_g N_vdd_XM11_s N_vdd_X23_noxref_minus psvtlp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.02 AD=0.035 PS=0.2 PD=0.55 PO2ACT=0.24959 NGCON=1 lpe=3
+XM10 N_Q_XM10_d N_SAF_XM10_g N_vdd_XM11_s N_vdd_X23_noxref_minus psvtlp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.02 AD=0.035 PS=0.2 PD=0.55 PO2ACT=0.24959 NGCON=1 lpe=3
+XM3 N_SAF_XM3_d N_SAT_XM3_g N_vdd_XM3_s N_vdd_X24_noxref_minus psvtlp L=0.06
++ W=0.8 NFING=1 M=1 AS=0.14 AD=0.08 PS=1.15 PD=0.2 PO2ACT=0.295796 NGCON=1 lpe=3
+XM0 N_SAF_XM0_d N_pch_XM0_g N_vdd_XM0_s N_vdd_X24_noxref_minus psvtlp L=0.06
++ W=0.135 NFING=1 M=1 AS=0.023625 AD=0.0135 PS=0.485 PD=0.2 PO2ACT=0.279598
++ NGCON=1 lpe=3
+XM3@2 N_SAF_XM3_d N_SAT_XM3@2_g N_vdd_XM3@2_s N_vdd_X24_noxref_minus psvtlp
++ L=0.06 W=0.8 NFING=1 M=1 AS=0.08 AD=0.08 PS=0.2 PD=0.2 PO2ACT=0.535088 NGCON=1
++ lpe=3
+XM1 N_SAT_XM1_d N_pch_XM1_g N_SAF_XM0_d N_vdd_X24_noxref_minus psvtlp L=0.06
++ W=0.135 NFING=1 M=1 AS=0.0135 AD=0.0135 PS=0.2 PD=0.2 PO2ACT=0.435 NGCON=1
++ lpe=3
+XM4 N_SAT_XM4_d N_SAF_XM4_g N_vdd_XM3@2_s N_vdd_X24_noxref_minus psvtlp L=0.06
++ W=0.8 NFING=1 M=1 AS=0.08 AD=0.08 PS=0.2 PD=0.2 PO2ACT=0.535088 NGCON=1 lpe=3
+XM2 N_SAT_XM1_d N_pch_XM2_g N_vdd_XM2_s N_vdd_X24_noxref_minus psvtlp L=0.06
++ W=0.135 NFING=1 M=1 AS=0.023625 AD=0.0135 PS=0.485 PD=0.2 PO2ACT=0.279598
++ NGCON=1 lpe=3
+XM4@2 N_SAT_XM4_d N_SAF_XM4@2_g N_vdd_XM4@2_s N_vdd_X24_noxref_minus psvtlp
++ L=0.06 W=0.8 NFING=1 M=1 AS=0.14 AD=0.08 PS=1.15 PD=0.2 PO2ACT=0.295796
++ NGCON=1 lpe=3
+XM13 N_QB_XM13_d N_SAT_XM13_g N_vdd_XM13_s N_vdd_X23_noxref_minus psvtlp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.02 AD=0.035 PS=0.2 PD=0.55 PO2ACT=0.24959 NGCON=1 lpe=3
+XM12 N_QB_XM12_d N_Q_XM12_g N_vdd_XM13_s N_vdd_X23_noxref_minus psvtlp L=0.06
++ W=0.2 NFING=1 M=1 AS=0.02 AD=0.035 PS=0.2 PD=0.55 PO2ACT=0.24959 NGCON=1 lpe=3
+XM6 N_SAT_XM6_d N_SAen_XM6_g N_BLB_XM6_s N_vdd_X24_noxref_minus psvtlp L=0.06
++ W=1.8 NFING=1 M=1 AS=0.315 AD=0.315 PS=2.15 PD=2.15 PO2ACT=0.175 NGCON=1 lpe=3
+XM14 N_Q_XM14_d N_QB_XM14_g net71 N_gnd_X23_noxref_plus nsvtlp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.02 AD=0.035 PS=0.2 PD=0.55 PO2ACT=0.24959 NGCON=1 lpe=0
+XM15 net71 N_SAF_XM15_g N_gnd_XM15_s N_gnd_X23_noxref_plus nsvtlp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.035 AD=0.02 PS=0.55 PD=0.2 PO2ACT=0.24959 NGCON=1 lpe=0
+XM7 N_SAF_XM7_d N_SAT_XM7_g N_net46_XM7_s N_gnd_X23_noxref_plus nsvtlp L=0.06
++ W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.295796 NGCON=1 lpe=3
+XM9 N_net46_XM9_d N_SAen_XM9_g N_gnd_XM9_s N_gnd_X23_noxref_plus nsvtlp L=0.06
++ W=1.4 NFING=1 M=1 AS=0.245 AD=0.14 PS=1.75 PD=0.2 PO2ACT=0.24959 NGCON=1 lpe=3
+XM7@2 N_SAF_XM7_d N_SAT_XM7@2_g N_net46_XM7@2_s N_gnd_X23_noxref_plus nsvtlp
++ L=0.06 W=1.2 NFING=1 M=1 AS=0.12 AD=0.12 PS=0.2 PD=0.2 PO2ACT=0.535088 NGCON=1
++ lpe=3
+XM9@2 N_net46_XM9_d N_SAen_XM9@2_g N_gnd_XM9@2_s N_gnd_X23_noxref_plus nsvtlp
++ L=0.06 W=1.4 NFING=1 M=1 AS=0.245 AD=0.14 PS=1.75 PD=0.2 PO2ACT=0.24959
++ NGCON=1 lpe=3
+XM8 N_SAT_XM8_d N_SAF_XM8_g N_net46_XM7@2_s N_gnd_X23_noxref_plus nsvtlp L=0.06
++ W=1.2 NFING=1 M=1 AS=0.12 AD=0.12 PS=0.2 PD=0.2 PO2ACT=0.535088 NGCON=1 lpe=3
+XM8@2 N_SAT_XM8_d N_SAF_XM8@2_g N_net46_XM8@2_s N_gnd_X23_noxref_plus nsvtlp
++ L=0.06 W=1.2 NFING=1 M=1 AS=0.21 AD=0.12 PS=1.55 PD=0.2 PO2ACT=0.295796
++ NGCON=1 lpe=3
+XM17 net72 N_SAT_XM17_g N_gnd_XM17_s N_gnd_X23_noxref_plus nsvtlp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.035 AD=0.02 PS=0.55 PD=0.2 PO2ACT=0.24959 NGCON=1 lpe=0
+XM16 N_QB_XM16_d N_Q_XM16_g net72 N_gnd_X23_noxref_plus nsvtlp L=0.06 W=0.2
++ NFING=1 M=1 AS=0.02 AD=0.035 PS=0.2 PD=0.55 PO2ACT=0.24959 NGCON=1 lpe=0
+X23_noxref N_gnd_X23_noxref_plus N_vdd_X23_noxref_minus dnwps  AREA=2.0059
++ PJ=8.65
+X24_noxref N_gnd_X23_noxref_plus N_vdd_X24_noxref_minus dnwps  AREA=6.7956
++ PJ=12.38
+*
+.include "sm.pex.spi.mdt_sm1.pxi"
+*
+.ends
+*
+*

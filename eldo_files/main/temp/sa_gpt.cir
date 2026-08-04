@@ -1,0 +1,59 @@
+* Sense Amplifier Characterization - 8192x32 M16 Memory
+.option post=1 summary=1
+.lib 'path_to_your_pdk.lib' tt  $ Change to 'ss' for Worst Case
+
+* --- Parameters ---
+.param VDD_VAL = 1.08
+.param DELTA_V = 0.100
+.param CLOAD = 5f
+
+* --- Voltage Sources ---
+V_VDD VDD 0 VDD_VAL
+V_GND GND 0 0
+
+* PCH: Low (0) for Precharge, High (1.08) for Eval
+VPCH Pch 0 PULSE(0 VDD_VAL 100p 10p 10p 400p 1000p)
+
+* BLB: Discharge by 100mV
+VBLB BLB 0 PULSE(VDD_VAL {VDD_VAL-DELTA_V} 50p 100p 10p 500p 1000p)
+VBL  BL  0 VDD_VAL
+
+* SAen: 100ps Pulse
+VSAEN SAen 0 PULSE(0 VDD_VAL 150p 10p 10p 100p 1000p)
+
+* --- Sense Amplifier Core ---
+* PMOS Precharge/Equalize
+M0 SAt Pch VDD VDD PMOS W=200n L=10n
+M1 SAf Pch VDD VDD PMOS W=200n L=10n
+M2 SAt Pch SAf VDD PMOS W=200n L=10n
+
+* Cross-Coupled Inverters
+M3 SAt SAf VDD VDD PMOS W=150n L=10n
+M4 SAf SAt VDD VDD PMOS W=150n L=10n
+M7 SAt SAf Ntail 0 NMOS W=400n L=10n
+M8 SAf SAt Ntail 0 NMOS W=400n L=10n
+
+* Input Mux/Access (Simplified)
+M5 SAt SAen BL  0 NMOS W=100n L=10n
+M6 SAf SAen BLB 0 NMOS W=100n L=10n
+
+* Tail Transistor
+M9 Ntail SAen 0 0 NMOS W=800n L=10n
+
+* --- NAND Latch (Simplified Example) ---
+* You should replace these with your actual NAND subcircuit
+XNAND1 Q  SAt QB VDD NAND_GATE
+XNAND2 QB SAf Q  VDD NAND_GATE
+
+* --- Analysis ---
+.tran 1p 1000p
+
+* --- Measurement ---
+* Measure Delay from SAen 50% to Q 50%
+.meas tran sa_delay TRIG v(SAen) val={VDD_VAL*0.5} rise=1 
++                  TARG v(Q)    val={VDD_VAL*0.5} rise=1
+
+* Measure Bitline Differential at the moment SAen fires
+.meas tran diff_v_at_saen FIND (v(BL)-v(BLB)) AT=150p
+
+.end

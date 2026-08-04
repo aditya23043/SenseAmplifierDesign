@@ -1,0 +1,70 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  MDT_Project
+* Top Cell Name: SA_MUX16
+* View Name:     schematic
+* Netlisted on:  Mar 23 19:56:28 2026
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd
+
+*.PIN gnd
+
+************************************************************************
+* Library Name: MDT_Project
+* Cell Name:    SA_MUX16
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT SA_MUX16 BL BLB Pch Q QB SAen
+*.PININFO BL:I BLB:I Pch:I SAen:I Q:O QB:O
+XM17 QB SAf VDD VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM16 QB Q VDD VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM11 Q QB VDD VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM10 Q SAt VDD VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM6 BLB SAen SAf VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM5 BL SAen SAt VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM4 SAf SAt VDD VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM3 SAt SAf VDD VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM2 SAt Pch SAf VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM1 SAf Pch VDD VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM0 SAt Pch VDD VDD psvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM19 net2 SAf gnd gnd nsvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM18 QB Q net2 gnd nsvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM15 net1 QB gnd gnd nsvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM14 Q SAt net1 gnd nsvtlp w=0.135 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM9 net4 SAen gnd gnd nsvtlp w=0.54 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM8 SAf SAt net4 gnd nsvtlp w=0.27 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+XM7 SAt SAf net4 gnd nsvtlp w=0.27 l=0.06 nfing=1 sense=0 ngcon=1 m=1 
++ accurateFlow=0
+.ENDS
+

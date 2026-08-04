@@ -1,0 +1,7 @@
+START report: Sat Apr  4 00:23:37 2026 
+** Error: (eldo - 3104)  In file "./sa.cir" line 60:
++   COMMAND ".MEAS": Found - while expecting a real value.
+** Error: (eldo - 455)  In file "./sa.cir" line 60:
++   COMMAND .MEAS: Unexpected keyword: V
+** Error: (eldo - 455)  In file "./sa.cir" line 60:
++   COMMAND .MEAS: Unexpected keyword: tran

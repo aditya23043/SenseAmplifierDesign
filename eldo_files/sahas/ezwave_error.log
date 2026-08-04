@@ -1,0 +1,17 @@
+DATE: Thursday 09 April 2026 23:48:50.521
+THR: AWT-EventQueue-0
+java.lang.NullPointerException
+	at com.mentor.jeda.wve.WveComponent.bm(WveComponent.java:4593)
+	at com.mentor.jeda.wve.WveWaveformRow.getIndex(WveWaveformRow.java:388)
+	at com.mentor.jeda.wve.WveObject.getHandle(WveObject.java:128)
+	at com.mentor.jeda.wve.WveUndoRedoMgr.addGraphAtomicCommand_ChangeWfColor(WveUndoRedoMgr.java:2818)
+	at com.mentor.jeda.wve.WveDlg_WaveformProperties$7.run(WveDlg_WaveformProperties.java:2850)
+	at java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+

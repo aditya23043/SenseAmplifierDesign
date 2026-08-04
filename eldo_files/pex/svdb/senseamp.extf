@@ -1,0 +1,10 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1775730801 1775730806
+lvs_ExtOutFile RUNDIR /home/aditya23043/eldo/MDT_Project/pex
+lvs_ExtOutFile RULES_FILE ctrl
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST svdb/senseamp.sp
+lvs_ExtOutFile EXTRACTION_REPORT senseamp.lvs.report.ext
+lvs_ExtOutFile LAYOUT_PDSP promoted_devices
