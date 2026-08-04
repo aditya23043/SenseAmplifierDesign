@@ -56,6 +56,20 @@ Signal (SAen) should be triggered for correct Sense somethin Amplifier operation
 | M13, M17, M16, M18 | Latch 2 MOS    | 0.2        | 0.06        |
 | M8, M9, M10        | Precharge PMOS | 0.135      | 0.06        |
 
+## Layouts
+
+### Normal Layout
+
+![normal](./assets/normal_layout.png)
+
+### Structurally Matched Layout
+
+![SM](./assets/sm_layout.png)
+
+### Common Centroid Layout
+
+![CC](./assets/cc_layout.png)
+
 ## Presentation
 
 [![presentation](./assets/ppt.png)](https://docs.google.com/presentation/d/1jzFjn4zTGRYCBdNPYTCXfxP-IHwxheRrN_HR3HV_ISg/edit?usp=sharing)
