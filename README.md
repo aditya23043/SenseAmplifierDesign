@@ -60,15 +60,16 @@ Signal (SAen) should be triggered for correct Sense somethin Amplifier operation
 
 ### Normal Layout
 
-![normal](./assets/normal_layout.png)
+<p align="center"><img src="./assets/normal_layout.png" width="60%"></p>
 
 ### Structurally Matched Layout
 
-![SM](./assets/sm_layout.png)
+<p align="center"><img src="./assets/sm_layout.png" width="60%"></p>
+
 
 ### Common Centroid Layout
 
-![CC](./assets/cc_layout.png)
+<p align="center"><img src="./assets/cc_layout.png" width="60%"></p>
 
 ## Presentation
 
